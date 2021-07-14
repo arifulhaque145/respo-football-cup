@@ -51,6 +51,7 @@ body {
 }
 
 header {
+    width : 100%;
     height: 500px;
 }
 
@@ -199,42 +200,55 @@ footer img {
 
 @media (min-width: 320px) and (max-width: 426px) {
     body {
-        padding         : 0;
-        margin          : 0;
-        box-sizing      : border-box;
-        background-color: turquoise;
+        padding            : 0;
+        margin             : 0;
+        width              : 100%;
+        box-sizing         : border-box;
+        /* background-color: turquoise; */
     }
 
     /* Header */
 
-    #header {
-        padding-top   : 100px;
-        padding-bottom: 0px;
-        margin-bottom : 40px;
+    header {
+        width : 100%;
+        height: 184px;
     }
 
-    header {
-        height: 150px;
+    #header {
+        padding-top      : 36px;
+        /* padding-bottom: 12px; */
+        margin-bottom    : 28px;
+    }
+
+    .header {
+        width      : 100%;
+        align-items: center;
     }
 
     .header__info {
-        margin-left: 80px;
+        margin-left: 28px;
     }
 
     .header__info h1 {
-        width      : 10px;
-        font-size  : 12px;
+        width      : 130px;
+        font-size  : 16px;
         line-height: 1.15;
     }
 
     .link-btn {
         font-size: 12px;
+        padding  : 5px 8px;
     }
 
     #img1 img {
-        height      : 100px;
-        width       : 100px;
-        margin-right: 40px;
+        height      : 120px;
+        width       : 120px;
+        margin-right: 42px;
+    }
+
+    #img:hover {
+        /* margin-top    : 14px; */
+        padding-bottom: 60px;
     }
 
     /* Cards */
@@ -244,13 +258,23 @@ footer img {
     }
 
     .cards__info {
-        width : 146px;
-        height: 300px;
+        width          : 285px;
+        height         : 300px;
+        /* margin-right: 70px; */
     }
 
     .cards__info img {
-        width : 146px;
+        width : 100%;
         height: 190px;
+    }
+
+    .card__info__title {
+        font-size  : 18px;
+        font-weight: 700;
+    }
+
+    .card__info__txt {
+        font-size: 10px;
     }
 
     #players {
@@ -267,8 +291,31 @@ footer img {
         text-align: center;
     }
 
+    .preview p {
+        font-size    : 12px;
+        margin-bottom: 0px;
+    }
+
+    .preview__title {
+        font-size  : 36px;
+        line-height: 1.15;
+    }
+
     #img2 {
         margin-top: 60px;
+    }
+
+    #img2 img {
+        width : 100%;
+        height: 427px;
+    }
+
+    footer {
+        padding: 0 20px 0 20px
+    }
+
+    footer img {
+        width: 100%;
     }
 }
 
@@ -288,6 +335,7 @@ footer img {
     }
 
     header {
+        width : 100%;
         height: 350px;
     }
 
