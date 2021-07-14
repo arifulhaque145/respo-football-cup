@@ -56,12 +56,6 @@ header {
     height: 30em;
 }
 
-.navbar {
-    display        : flex;
-    align-items    : flex-start;
-    justify-content: space-between;
-}
-
 .header {
     display        : flex;
     align-items    : flex-start;
@@ -250,9 +244,9 @@ footer img {
 
     /* Header */
 
-    header {
+    .header {
         width : 100%;
-        height: 14.5em;
+        height: 100%;
     }
 
     #header {
@@ -262,35 +256,41 @@ footer img {
     }
 
     .header {
-        width      : 100%;
-        align-items: center;
-        padding-top: 1.83em;
+        width          : 100%;
+        display        : flex;
+        flex-direction : column;
+        justify-content: center;
     }
 
     .header__info {
-        width      : 65%;
-        margin-left: 2.15em;
+        margin-left: 0em;
+        padding-top: 2.5em;
+        text-align : center;
+        height     : 100%;
+        width      : 100%;
     }
 
     .header__info h1 {
-        font-size         : 1.25em;
+        font-size         : 2em;
         line-height       : 1.20;
         margin-block-start: 0em;
     }
 
     .link-btn {
-        font-size: 0.75em;
+        font-size: 1.25em;
         padding  : 0.31em 0.5em;
     }
 
     #img1 {
-        width       : 35%;
-        margin-right: 2.15em;
+        text-align     : center;
+        width          : 100%;
+        height         : 100%;
+        /* margin-right: 2.15em; */
     }
 
     #img1 img {
-        height      : 10.42em;
-        width       : 8.13em;
+        height      : 10.75em;
+        width       : 8.25em;
         margin-right: 2.63em;
     }
 
