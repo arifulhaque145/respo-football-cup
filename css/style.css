@@ -44,8 +44,14 @@ body {
             header styles
 ===================================*/
 
+#header {
+    padding-top   : 100px;
+    padding-bottom: 40px;
+    margin-bottom : 86px;
+}
+
 header {
-    height       : 500px;
+    height: 500px;
 }
 
 .navbar {
@@ -70,20 +76,33 @@ header {
 }
 
 .link-btn {
+    padding-top    : 15px;
     padding        : 10px 24px;
     text-decoration: none;
 }
 
 #img1 img {
-    height: 438px;
-    width : 556px;
+    height      : 438px;
+    width       : 556px;
     margin-right: 140px;
+}
+
+#img1:hover {
+    margin-top: 55px;
+    transform : rotate(90deg);
+    transition: transform 2s;
 }
 
 
 /*===================================
             players styles
 ===================================*/
+
+#players {
+    display        : flex;
+    justify-content: center;
+    margin-bottom  : 165px;
+}
 
 .cards {
     display              : grid;
@@ -126,6 +145,11 @@ header {
             preview styles
 ===================================*/
 
+#highlights {
+    display        : flex;
+    justify-content: space-around;
+}
+
 .preview__title {
     font-size    : 48px;
     font-weight  : 700;
@@ -154,7 +178,7 @@ footer img {
 }
 
 #icon__list a {
-    margin-right: 14px;
+    margin-right    : 14px;
     padding         : 10px 7px;
     text-align      : center;
     font-size       : 14px;
@@ -166,4 +190,155 @@ footer img {
 #icon__list a i {
     width : 24px;
     height: 24px;
+}
+
+
+/*===================================
+            media queries
+===================================*/
+
+@media (min-width: 320px) and (max-width: 426px) {
+    body {
+        padding         : 0;
+        margin          : 0;
+        box-sizing      : border-box;
+        background-color: turquoise;
+    }
+
+    /* Header */
+
+    #header {
+        padding-top   : 100px;
+        padding-bottom: 0px;
+        margin-bottom : 40px;
+    }
+
+    header {
+        height: 150px;
+    }
+
+    .header__info {
+        margin-left: 80px;
+    }
+
+    .header__info h1 {
+        width      : 10px;
+        font-size  : 12px;
+        line-height: 1.15;
+    }
+
+    .link-btn {
+        font-size: 12px;
+    }
+
+    #img1 img {
+        height      : 100px;
+        width       : 100px;
+        margin-right: 40px;
+    }
+
+    /* Cards */
+    .cards {
+        display              : grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .cards__info {
+        width : 146px;
+        height: 300px;
+    }
+
+    .cards__info img {
+        width : 146px;
+        height: 190px;
+    }
+
+    #players {
+        margin-bottom: 10px;
+    }
+
+    #highlights {
+        display       : flex;
+        flex-direction: column;
+        align-items   : center;
+    }
+
+    .preview {
+        text-align: center;
+    }
+
+    #img2 {
+        margin-top: 60px;
+    }
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
+    body {
+        padding   : 0;
+        margin    : 0;
+        box-sizing: border-box;
+    }
+
+    /* Header */
+
+    #header {
+        padding-top   : 100px;
+        padding-bottom: 0px;
+        margin-bottom : 40px;
+    }
+
+    header {
+        height: 350px;
+    }
+
+    .header__info {
+        margin-left: 80px;
+    }
+
+    .header__info h1 {
+        width      : 300px;
+        font-size  : 36px;
+        line-height: 1.15;
+    }
+
+    .link-btn {
+        font-size: 12px;
+    }
+
+    #img1 img {
+        height      : 238px;
+        width       : 356px;
+        margin-right: 140px;
+    }
+
+    /* Cards */
+
+    .cards {
+        display              : grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap           : 27px;
+    }
+
+    #players {
+        margin-bottom: 10px;
+    }
+
+    #highlights {
+        display       : flex;
+        flex-direction: column;
+        align-items   : center;
+    }
+
+    .preview {
+        text-align: center;
+    }
+
+    #img2 {
+        margin-top: 60px;
+    }
+
+    #icon__list a {
+        font-size: 14px;
+    }
+
 }
