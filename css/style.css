@@ -1,0 +1,169 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+/*===================================
+            body styles
+===================================*/
+
+body {
+    padding    : 0;
+    margin     : 0;
+    box-sizing : border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.bg-blue {
+    background-color: rgb(8, 8, 139);
+}
+
+.bg-red {
+    background-color: rgba(224, 44, 109, 1);
+}
+
+.bg-grey {
+    background-color: rgba(150, 155, 171, 1);
+}
+
+.txt-black {
+    color: rgba(11, 13, 23, 1);
+}
+
+.txt-white {
+    color: white;
+}
+
+.txt-grey {
+    color: rgba(24, 25, 31, 1);
+}
+
+.txt-lg-black {
+    color: rgba(108, 108, 108, 1);
+}
+
+
+/*===================================
+            header styles
+===================================*/
+
+header {
+    height       : 500px;
+}
+
+.navbar {
+    display        : flex;
+    align-items    : flex-start;
+    justify-content: space-between;
+}
+
+.header {
+    display        : flex;
+    align-items    : flex-start;
+    justify-content: space-between;
+}
+
+.header__info {
+    margin-left: 160px;
+}
+
+.header__info h1 {
+    font-size  : 64px;
+    line-height: 1.15;
+}
+
+.link-btn {
+    padding        : 10px 24px;
+    text-decoration: none;
+}
+
+#img1 img {
+    height: 438px;
+    width : 556px;
+    margin-right: 140px;
+}
+
+
+/*===================================
+            players styles
+===================================*/
+
+.cards {
+    display              : grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap           : 27px;
+}
+
+.cards__info {
+    width        : 300px;
+    height       : 454px;
+    padding      : 15px;
+    margin-bottom: 27px;
+    border-radius: 5px;
+    box-shadow   : 0 0 40px rgba(0, 0, 0, 0.15);
+}
+
+.cards__info img {
+    width : 300px;
+    height: 256px;
+}
+
+.card__info__title {
+    font-size  : 28px;
+    font-weight: 700;
+    margin     : 16px 0 10px 0;
+}
+
+.card__info__txt {
+    text-align: justify;
+    font-size : 16px;
+}
+
+#img2 img {
+    width : 567px;
+    height: 427px;
+}
+
+
+/*===================================
+            preview styles
+===================================*/
+
+.preview__title {
+    font-size    : 48px;
+    font-weight  : 700;
+    margin-bottom: 0;
+}
+
+
+/*===================================
+            footer styles
+===================================*/
+
+footer {
+    display        : flex;
+    flex-direction : column;
+    align-items    : center;
+    justify-content: center;
+}
+
+footer img {
+    width : 483px;
+    height: 110px;
+}
+
+#icon__list {
+    margin-bottom: 20px;
+}
+
+#icon__list a {
+    margin-right: 14px;
+    padding         : 10px 7px;
+    text-align      : center;
+    font-size       : 14px;
+    border-radius   : 50%;
+    background-color: rgba(150, 155, 171, 0.5);
+    color           : rgba(0, 0, 0, 0.4);
+}
+
+#icon__list a i {
+    width : 24px;
+    height: 24px;
+}
