@@ -159,6 +159,52 @@ header {
 
 
 /*===================================
+            news styles
+===================================*/
+
+.focus__title {
+    font-size    : 3em;
+    font-weight  : 600;
+    text-align   : center;
+    margin-bottom: 2.5em;
+}
+
+.focus__news {
+    display              : grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap           : 2.5em;
+}
+
+.focus__imgs {
+    padding-left: 2.5em;
+}
+
+.focus__info {
+    padding-right: 2.5em;
+}
+
+
+/*===================================
+            videos styles
+===================================*/
+
+#videos {
+    display        : flex;
+    justify-content: center;
+}
+
+.video__list {
+    padding-top   : 1.25em;
+    padding-bottom: 1.25em;
+}
+
+.video__list__items {
+    display              : grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap           : 2.5em;
+}
+
+/*===================================
             footer styles
 ===================================*/
 
@@ -310,6 +356,35 @@ footer img {
         height: 26.69em;
     }
 
+    .focus__img {
+        width : 100%;
+        height: auto;
+    }
+
+    .focus__imgs {
+        padding-right: 2.5em;
+    }
+
+    .focus__info {
+        text-align   : center;
+        padding-left : 2.5em;
+        padding-right: 2.5em;
+    }
+
+    .focus__title {
+        margin-bottom: 1.5em;
+    }
+
+    .focus__news {
+        display: block;
+    }
+
+    .video__list__items {
+        display              : grid;
+        grid-template-columns: repeat(1, 1fr);
+        row-gap              : 1.25em;
+    }
+
     footer {
         padding: 0 1.25em 0 1.25em
     }
@@ -379,6 +454,34 @@ footer img {
         display       : flex;
         flex-direction: column;
         align-items   : center;
+    }
+
+    .focus__img {
+        width : 100%;
+        height: auto;
+    }
+
+    .focus__imgs {
+        padding-right: 2.5em;
+    }
+
+    .focus__info {
+        padding-left : 2.5em;
+        padding-right: 2.5em;
+    }
+
+    .focus__title {
+        margin-bottom: 2em;
+    }
+
+    .focus__news {
+        display: block;
+    }
+
+    .video__list__items {
+        display              : grid;
+        grid-template-columns: repeat(1, 1fr);
+        row-gap              : 1.25em;
     }
 
     .preview {
