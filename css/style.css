@@ -69,7 +69,7 @@ header {
 }
 
 .header__info {
-    margin-left: 10em;
+    margin-left: 3em;
 }
 
 .header__info h1 {
@@ -222,13 +222,13 @@ footer img {
     }
 
     .header__info {
+        width      : 65%;
         margin-left: 2.15em;
     }
 
-    .header__info>h1 {
-        display           : inline-block width: 60%;
-        font-size         : 16px;
-        line-height       : 1.15;
+    .header__info h1 {
+        font-size         : 1.25em;
+        line-height       : 1.20;
         margin-block-start: 0em;
     }
 
@@ -238,7 +238,7 @@ footer img {
     }
 
     #img1 {
-        width       : 40%;
+        width       : 35%;
         margin-right: 2.15em;
     }
 
